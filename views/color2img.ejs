@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    body{
+      box-sizing: border-box;
+      padding: 50px;
+    }
+      #generate-btn{
+        margin-top: 10px;
+      }
+      #showUrl{
+        margin-top: 20px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h3>请在下面输入框内输入color值</h3>
+    <p>color值格式如下：</p>
+    <pre>
+#F28500
+#FF9900
+#CCB38C
+#996B1F
+    </pre>
+    <textarea id="colorVals" class="form-control" rows="3" placeholder="输入16进制color值"></textarea>
+    <button id="generate-btn" type="button" class="btn btn-info">点此生成图片文件</button>
+
+    <table id="showUrl" class="table table-hover">
+      <th class="success">已成功生成文件</th>
+    </table>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/javascripts/color2img.js"></script>
+  </body>
+</html>
