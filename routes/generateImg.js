@@ -29,13 +29,14 @@ function drawRect(arr, callback) {
   var fileDir = __dirname + "/../public/generateImg/";
   var fileName = arr[0] + "-" + arr[1] + "-" + arr[2] + "-" + arr[3] + ".png";
   currentArr.length = 0;
+  //是否已存在此图片
   fs.readFile(fileDir + fileName, (err, data) => {
     if (data) {
       console.log(fileName + '已存在');
       callback(null);
     };
   });
-
+  //往generateImg文件夹里写入图片文件
   fs.writeFile(fileDir + fileName, dataBuffer, function(err) {
     if (err) {
       throw err

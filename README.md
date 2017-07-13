@@ -1,3 +1,7 @@
+
+![color2img](https://github.com/tiansn/color2img/tree/master/public/images/color2img.png)
+---
+
 # color2img
 This project can use hex color value transform to img file.
 
@@ -20,5 +24,3 @@ you can use this test data.
 
 
 ---
-
-
