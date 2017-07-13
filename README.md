@@ -1,5 +1,5 @@
 
-![color2img](https://github.com/tiansn/color2img/tree/master/public/images/color2img.png)
+![color2img](https://raw.githubusercontent.com/tiansn/color2img/master/public/images/color2img.png)
 ---
 
 # color2img
